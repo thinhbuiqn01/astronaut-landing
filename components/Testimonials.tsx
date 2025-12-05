@@ -1,8 +1,7 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { motion } from 'framer-motion'
 
 export default function Testimonials() {
   const { t } = useLanguage()
@@ -29,18 +28,13 @@ export default function Testimonials() {
   ]
 
   return (
-    <section
-      id="testimonials"
-      className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50"
-    >
+    <section id="testimonials" className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t.testimonials.title}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t.testimonials.description}
-          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.testimonials.description}</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {testimonials.map((testimonial, index) => (
@@ -72,7 +66,8 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed italic">
-                "{testimonial.content}"
+                {' '}
+                &quot;{testimonial.content}&quot;
               </p>
             </motion.div>
           ))}
@@ -81,4 +76,3 @@ export default function Testimonials() {
     </section>
   )
 }
-
