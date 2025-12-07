@@ -41,7 +41,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6"
             >
-              {t.hero.title} <span className="text-primary-600">{t.hero.titleHighlight}</span>{' '}
+              {t.hero.title} <br />
+              <span className="text-primary-600">{t.hero.titleHighlight}</span>{' '}
               {t.hero.titleSuffix}
             </motion.h1>
             <motion.p
@@ -66,7 +67,7 @@ export default function Hero() {
                 {t.hero.getStarted}
               </a>
               <a
-                href="#features"
+                href="#experiences"
                 className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg border-2 border-primary-600 hover:bg-primary-50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
                 aria-label={`${t.hero.learnMore} - Secondary CTA`}
               >

@@ -19,12 +19,6 @@ export default function Testimonials() {
       content: t.testimonials.testimonial2.content,
       avatar: '/assets/avatar-2.jpg',
     },
-    {
-      name: t.testimonials.testimonial3.name,
-      role: t.testimonials.testimonial3.role,
-      content: t.testimonials.testimonial3.content,
-      avatar: '/assets/avatar-3.jpg',
-    },
   ]
 
   return (

@@ -9,46 +9,41 @@ export default function Pricing() {
   const pricingTiers = [
     {
       name: t.pricing.stargazer.name,
-      price: '$29',
-      period: '/month',
+      price: '$5',
+      period: '/hour',
       description: t.pricing.stargazer.description,
-      features: t.pricing.stargazer.features,
+      experiences: t.pricing.stargazer.experiences,
       cta: t.pricing.stargazer.cta,
       popular: false,
     },
     {
       name: t.pricing.astronomer.name,
-      price: '$79',
-      period: '/month',
+      price: '$10',
+      period: '/hour',
       description: t.pricing.astronomer.description,
-      features: t.pricing.astronomer.features,
+      experiences: t.pricing.astronomer.experiences,
       cta: t.pricing.astronomer.cta,
       popular: true,
     },
     {
       name: t.pricing.cosmicExplorer.name,
-      price: '$199',
-      period: '/month',
+      price: '$15',
+      period: '/hour',
       description: t.pricing.cosmicExplorer.description,
-      features: t.pricing.cosmicExplorer.features,
+      experiences: t.pricing.cosmicExplorer.experiences,
       cta: t.pricing.cosmicExplorer.cta,
       popular: false,
     },
   ]
 
   return (
-    <section
-      id="pricing"
-      className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white"
-    >
+    <section id="pricing" className="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t.pricing.title}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t.pricing.description}
-          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">{t.pricing.description}</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-6xl mx-auto">
           {pricingTiers.map((tier, index) => (
@@ -80,8 +75,8 @@ export default function Pricing() {
                 </div>
               </div>
               <ul className="space-y-4 mb-8">
-                {tier.features.map((feature) => (
-                  <li key={feature} className="flex items-start">
+                {tier.experiences.map(experience => (
+                  <li key={experience} className="flex items-start">
                     <svg
                       className="w-5 h-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0"
                       fill="none"
@@ -93,7 +88,7 @@ export default function Pricing() {
                     >
                       <path d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700">{experience}</span>
                   </li>
                 ))}
               </ul>
@@ -115,4 +110,3 @@ export default function Pricing() {
     </section>
   )
 }
-

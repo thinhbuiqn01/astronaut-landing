@@ -1,16 +1,21 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import { ReactNode } from 'react'
 
-interface FeatureCardProps {
+interface ExperienceCardProps {
   title: string
   description: string
-  icon?: string
+  icon?: ReactNode
   delay?: number
 }
 
-export default function FeatureCard({ title, description, icon, delay = 0 }: FeatureCardProps) {
+export default function ExperienceCard({
+  title,
+  description,
+  icon,
+  delay = 0,
+}: ExperienceCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -21,17 +26,7 @@ export default function FeatureCard({ title, description, icon, delay = 0 }: Fea
     >
       {icon && (
         <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-          {/* Placeholder icon - Replace with actual icon from Figma */}
-          <div className="w-8 h-8 bg-primary-600 rounded-lg" />
-          {/* Uncomment when you have the actual icon:
-          <Image
-            src={icon}
-            alt={`${title} icon`}
-            width={32}
-            height={32}
-            className="object-contain"
-          />
-          */}
+          <div className="w-8 h-8 text-primary-600">{icon}</div>
         </div>
       )}
       <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
@@ -39,4 +34,3 @@ export default function FeatureCard({ title, description, icon, delay = 0 }: Fea
     </motion.div>
   )
 }
-

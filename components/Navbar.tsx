@@ -20,9 +20,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: t.nav.home, href: '#home' },
-    { name: t.nav.features, href: '#features' },
+    { name: t.nav.profile, href: '#profile' },
+    { name: t.nav.experiences, href: '#experiences' },
+    { name: t.nav.projects, href: '#projects' },
     { name: t.nav.testimonials, href: '#testimonials' },
-    { name: t.nav.pricing, href: '#pricing' },
+    // { name: t.nav.pricing, href: '#pricing' },
   ]
 
   return (
@@ -44,7 +46,7 @@ export default function Navbar() {
             }`}
             aria-label="Home"
           >
-            Astronaut
+            Tony Bui&apos;s Portfolio
           </a>
 
           {/* Desktop Navigation */}
@@ -63,7 +65,7 @@ export default function Navbar() {
               </a>
             ))}
             <LanguageSwitcher scrolled={scrolled} />
-            <a
+            {/* <a
               href="#cta"
               className={`px-6 py-2.5 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 ${
                 scrolled
@@ -73,7 +75,7 @@ export default function Navbar() {
               aria-label={t.nav.getStarted}
             >
               {t.nav.getStarted}
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -126,13 +128,13 @@ export default function Navbar() {
                 <div className="py-2">
                   <LanguageSwitcher scrolled={scrolled} />
                 </div>
-                <a
+                {/* <a
                   href="#cta"
                   className="block bg-primary-600 text-white px-6 py-2.5 rounded-lg font-medium text-center hover:bg-primary-700 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {t.nav.getStarted}
-                </a>
+                </a> */}
               </div>
             </motion.div>
           )}

@@ -11,24 +11,24 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Astronaut | View Planets, Stars, Black Holes Online',
+  title: 'Portfolio | Tony Bui',
   description:
-    'Explore the universe online - view planets, stars, black holes, and experience virtual space travel. Discover the cosmos in stunning detail.',
+    'Portfolio of Tony Bui, a software engineer with a passion for building web applications.',
   keywords: [
-    'space exploration',
-    'view planets online',
-    'stars',
-    'black holes',
-    'space travel',
-    'universe',
-    'astronomy',
-    'cosmos',
+    'portfolio',
+    'software engineer',
+    'web development',
+    'full stack developer',
+    'react',
+    'next.js',
+    'typescript',
+    'javascript',
   ],
-  authors: [{ name: 'Astronaut' }],
+  authors: [{ name: 'Tony Bui' }],
   openGraph: {
-    title: 'Astronaut | View Planets, Stars, Black Holes Online',
+    title: 'Portfolio | Tony Bui',
     description:
-      'Explore the universe online - view planets, stars, black holes, and experience virtual space travel.',
+      'Portfolio of Tony Bui, a software engineer with a passion for building web applications.',
     type: 'website',
   },
 }
