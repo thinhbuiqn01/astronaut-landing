@@ -31,6 +31,18 @@ export const translations = {
         title: 'Next.js',
         description: 'Building web applications using Next.js, Tanstack Query, and Tailwind CSS.',
       },
+      nodejs: {
+        title: 'Node.js',
+        description: 'Building server-side applications and APIs using Node.js and Express.',
+      },
+      nestjs: {
+        title: 'NestJS',
+        description: 'Building scalable backend applications using NestJS framework with TypeScript.',
+      },
+      rxjs: {
+        title: 'RxJS',
+        description: 'Working with reactive programming using RxJS for handling asynchronous operations.',
+      },
       angular: {
         title: 'Angular',
         description: 'Building web applications using Angular, RxJs, and Bootstrap.',
@@ -247,6 +259,18 @@ export const translations = {
       nextjs: {
         title: 'Next.js',
         description: 'Xây dựng ứng dụng web bằng Next.js và Tailwind CSS.',
+      },
+      nodejs: {
+        title: 'Node.js',
+        description: 'Xây dựng ứng dụng phía server và API bằng Node.js và Express.',
+      },
+      nestjs: {
+        title: 'NestJS',
+        description: 'Xây dựng ứng dụng backend có thể mở rộng bằng framework NestJS với TypeScript.',
+      },
+      rxjs: {
+        title: 'RxJS',
+        description: 'Làm việc với lập trình phản ứng sử dụng RxJS để xử lý các thao tác bất đồng bộ.',
       },
       angular: {
         title: 'Angular',

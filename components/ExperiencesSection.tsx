@@ -2,8 +2,7 @@
 
 import ExperienceCard from './ExperienceCard'
 import { useLanguage } from '@/contexts/LanguageContext'
-import { SiNextdotjs, SiAngular, SiReact } from 'react-icons/si'
-import { FaCode, FaLaptopCode } from 'react-icons/fa'
+import { SiNextdotjs, SiAngular, SiReact, SiNodedotjs, SiNestjs, SiReactivex } from 'react-icons/si'
 import { VscVscode } from 'react-icons/vsc'
 import { BsCursorFill } from 'react-icons/bs'
 
@@ -17,14 +16,29 @@ export default function ExperiencesSection() {
       icon: <SiNextdotjs className="w-8 h-8" />,
     },
     {
+      title: t.experiences.react.title,
+      description: t.experiences.react.description,
+      icon: <SiReact className="w-8 h-8" />,
+    },
+    {
       title: t.experiences.angular.title,
       description: t.experiences.angular.description,
       icon: <SiAngular className="w-8 h-8" />,
     },
     {
-      title: t.experiences.react.title,
-      description: t.experiences.react.description,
-      icon: <SiReact className="w-8 h-8" />,
+      title: t.experiences.nodejs.title,
+      description: t.experiences.nodejs.description,
+      icon: <SiNodedotjs className="w-8 h-8" />,
+    },
+    {
+      title: t.experiences.nestjs.title,
+      description: t.experiences.nestjs.description,
+      icon: <SiNestjs className="w-8 h-8" />,
+    },
+    {
+      title: t.experiences.rxjs.title,
+      description: t.experiences.rxjs.description,
+      icon: <SiReactivex className="w-8 h-8" />,
     },
     {
       title: t.experiences.vscode.title,
@@ -34,7 +48,7 @@ export default function ExperiencesSection() {
     {
       title: t.experiences.cursor.title,
       description: t.experiences.cursor.description,
-      icon: <BsCursorFill  className="w-8 h-8" />,
+      icon: <BsCursorFill className="w-8 h-8" />,
     },
   ]
 
